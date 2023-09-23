@@ -7,6 +7,22 @@
 	display: flex;
 	flex-direction: column;
 }
+/* Style the vertical scrollbar */
+::-webkit-scrollbar {
+	width: 5px; /* Adjust the width as needed */
+}
+
+/* Style the scrollbar track */
+::-webkit-scrollbar-track {
+	background: transparent; /* Set the background color of the track */
+}
+
+/* Style the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+	background: #40aa9d; /* Set the color of the scrollbar thumb */
+	border-radius: 5px; /* Adjust the border-radius for a rounded thumb */
+}
+
 .page {
 	flex: 1;
 	display: flex;

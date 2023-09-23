@@ -1,6 +1,4 @@
-import { Box, Text } from "@chakra-ui/react";
-import { useQuery } from "@tanstack/react-query";
-import axios from "axios";
+import { Text } from "@chakra-ui/react";
 import EventCard from "../components/eventCard";
 export interface IEvent {
 	id: number;
@@ -8,7 +6,34 @@ export interface IEvent {
 	startDate: string;
 	endDate: string;
 	url: string;
+	location?: string;
+	recommended_airport?: string;
+	expenses?: IExpense[];
 }
+export interface IExpense {
+	id: number;
+	title: string;
+	requester: string; // wallet address
+	amount: number; // measured in usd
+	date?: string;
+	status?: "rejected" | "approved" | "pending";
+}
+export const expenseData: IExpense[] = [
+	{
+		id: 1,
+		title: "Flight",
+		requester: "0x1234",
+		amount: 500,
+		date: "2021-11-11",
+	},
+	{
+		id: 2,
+		title: "Flight",
+		requester: "0x1234",
+		amount: 500,
+		date: "2021-11-11",
+	},
+];
 export const data: IEvent[] = [
 	{
 		id: 1,
@@ -16,6 +41,8 @@ export const data: IEvent[] = [
 		startDate: "2023-11-11",
 		endDate: "2023-11-11",
 		url: "https://ethglobal.com/ETHNYC",
+		location: "New York City",
+		recommended_airport: "JFK",
 	},
 	{
 		id: 1,
