@@ -25,6 +25,7 @@ export const expenseData: IExpense[] = [
 		requester: "0x1234",
 		amount: 500,
 		date: "2021-11-11",
+		status: "approved",
 	},
 	{
 		id: 2,
@@ -32,6 +33,7 @@ export const expenseData: IExpense[] = [
 		requester: "0x1234",
 		amount: 500,
 		date: "2021-11-11",
+		status: "pending",
 	},
 ];
 export const data: IEvent[] = [

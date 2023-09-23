@@ -12,9 +12,14 @@ export default function Header({ title }: HeaderProps) {
 				className={
 					"flex flex-row justify-between align-bottom px-8 py-2 w-full"
 				}>
-				<Text textStyle={"title"} color={"green.200"}>
-					{title}
-				</Text>
+				<div className="flex flex-row items-center justify-start">
+					<Link to="/" className="p-4">
+						<img src={"/logo.png"} alt={"logo"} className={"w-12 h-12"} />
+					</Link>
+					<Text textStyle={"title"} color={"green.200"}>
+						{title}
+					</Text>
+				</div>
 				<nav className={"flex flex-row gap-2 align-bottom"}>
 					<Link to="/" className="flex flex-col justify-end">
 						<Text textStyle={"link"} fontSize={"xl"}>
