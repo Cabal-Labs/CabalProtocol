@@ -99,6 +99,12 @@ const theme = extendTheme({
 			fontFamily: "heading",
 			color: "gray.300",
 		},
+		label: {
+			fontSize: "16px",
+			fontFamily: "heading",
+			fontWeight: "bold",
+			color: "gray.100",
+		},
 	},
 	components: {
 		Button: {

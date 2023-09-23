@@ -2,8 +2,9 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import HomePage from "../pages";
 import Login from "../pages/login";
-import FeedPage from "../pages/feed";
 import Header from "../components/header";
+import EventsPage from "../pages/events";
+import EventPage from "../pages/event";
 
 const Router = () => {
 	return (
@@ -28,11 +29,20 @@ const Router = () => {
 					}
 				/>
 				<Route
-					path="/feed"
+					path="/events"
 					element={
 						<>
-							<Header title={"Feed"} />
-							<FeedPage />
+							<Header title={"Events"} />
+							<EventsPage />
+						</>
+					}
+				/>
+				<Route
+					path="/events/:id"
+					element={
+						<>
+							<Header title={"Event"} />
+							<EventPage />
 						</>
 					}
 				/>
