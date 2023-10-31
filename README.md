@@ -14,4 +14,4 @@ Initially started as a submission for [ETH NYC 2023](https://ethglobal.com/showc
 
 - [Brendan Probst](https://brendanprobst.com)
 - [Marco Auraleos Salazar Torres](https://www.linkedin.com/in/marcos-aurelio-salazar-torres-mast/)
-- [Gianangelo Dichio]()
+- [Gianangelo Dichio](https://github.com/gdichio)
